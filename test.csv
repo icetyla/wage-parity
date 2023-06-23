@@ -1,4 +1,4 @@
-,first_name,last_name,agency,weekly_hours_worked,hourly_wage,allocated_wage,pharmacy,dental,vision,unspecified,weekly_spending,weeks_in_program
+index,first_name,last_name,agency,weekly_hours_worked,hourly_wage,allocated_wage,pharmacy,dental,vision,unspecified,weekly_spending,weeks_in_program
 0,Kevin,Gibson,NU,30,4,115.2,88.14,512.27,470.16,580.56,127.01,13
 1,Larry,Lacasse,HomeAssist,18,2,34.56,124.23,316.18,190.63,404.26,26.55,39
 2,Toby,Wester,OneStop,27,3,77.76,70.89,414.87,58.81,161.77,30.71,23
