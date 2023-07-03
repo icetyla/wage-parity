@@ -1,8 +1,9 @@
 import os
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_absolute_error
+from sklearn import metrics
 
 # Load the data
 path = os.getcwd()
@@ -24,10 +25,20 @@ logistic = LogisticRegression()
 logistic.fit(X_train, y_train)
 preds = logistic.predict(X_valid)
 
-# Assess the model with mean absolute error
-mae_logs = mean_absolute_error(y_valid, preds)
-print('MAE for Logisitic Regression:')
-print(mae_logs)
+# Assess the model with accuracy, recall, and precision
+accuracy = metrics.accuracy_score(y_valid, preds)
+recall = metrics.recall_score(y_valid, preds)
+precision = metrics.precision_score(y_valid, preds)
+print('Accuracy score:', accuracy)
+print('Recall score:', recall)
+print('Precision score:', precision)
+
+# Validate and visualize the model using the ROC curve
+fpr, tpr, thresholds = metrics.roc_curve(y_valid, preds)
+roc_auc = metrics.auc(fpr, tpr)
+graph = metrics.RocCurveDisplay(fpr=fpr, tpr=tpr, roc_auc=roc_auc)
+graph.plot()
+plt.show()
 
 # Create the final model
 model = LogisticRegression()
