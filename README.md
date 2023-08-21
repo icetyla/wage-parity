@@ -1,2 +1,5 @@
 # READ-ME
 
+This project uses [COVID-19 Community Mobility Reports](https://www.google.com/covid19/mobility/) data and [NYC Department of Health and Mental Hygiene](https://www.nyc.gov/site/doh/index.page) data to analyze and forecast changes in spending patterns by categories such as Retail and Recreational, Grocery and Pharmacy, and Transit.
+
+Using the provided data, the goal of the project is to create a recommendation system for the amount of wage that should be allocated into a Home Health Aide(HHA) worker's benefit card. Under the Wage Parity law, HHA employees employed at a Certified Home Health Agency(CHHA), Long-Term Home Healthcare Program(LTHHCP), Managed Care Organization(MCO), or a Licensed Home Care Services Agency(LHCSA) are granted a benefit program that allows them to allocate a portion of their pre-tax wage to a benefit card.
